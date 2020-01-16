@@ -54,7 +54,7 @@
                                 <connections>
                                     <outlet property="checkButton" destination="0vM-eD-JUf" id="Rqc-RP-8ZJ"/>
                                     <outlet property="titleLabel" destination="PF7-JA-4CP" id="Osf-gJ-T8O"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WZP-kI-NcY"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="updateBook" id="WZP-kI-NcY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,6 +160,6 @@
         <image name="unchecked" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qqj-Jw-TyM"/>
+        <segue reference="WZP-kI-NcY"/>
     </inferredMetricsTieBreakers>
 </document>

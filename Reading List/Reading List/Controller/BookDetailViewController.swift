@@ -10,6 +10,8 @@ import UIKit
 
 class BookDetailViewController: UIViewController {
 
+    var bookController: BookController?
+    var book: Book?
     
     
     @IBOutlet weak var titleText: UITextField!
@@ -20,6 +22,7 @@ class BookDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateViews()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +31,21 @@ class BookDetailViewController: UIViewController {
     }
 
     @IBAction func saveButtonTap(_ sender: UIBarButtonItem) {
+        if let newBook = book {
+            bookController?.updateDetails(for: newBook)
+        } else if let title = titleText.text, let reason = resonToRead.text {
+            bookController?.Create(title: title, reasonToRead: reason)
+        }
+    }
+    
+    func updateViews(){
+        if let updateBook =  book {
+            titleText.text = updateBook.title
+            resonToRead.text = updateBook.reasonToRead
+            self.title = updateBook.title
+        } else {
+             self.title = "Add a new book"
+        }
     }
     
 }

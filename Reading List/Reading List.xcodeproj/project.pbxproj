@@ -56,9 +56,9 @@
 		0449698D23CF233600131F29 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0449699723CF4E6000131F29 /* ReadingListTableViewController.swift */,
 				4669416A2110E22B00E7FF73 /* BookDetailViewController.swift */,
 				0449699523CF4E3B00131F29 /* BookTableViewCell.swift */,
-				0449699723CF4E6000131F29 /* ReadingListTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
