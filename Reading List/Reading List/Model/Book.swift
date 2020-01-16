@@ -9,12 +9,12 @@
 import Foundation
 
 struct Book: Codable, Equatable {
-    let title: String
-    let reasonToRead: String
-    let hasBeenRead: Bool
+    var title: String
+    var reasonToRead: String
+    var hasBeenRead: Bool
     
     //Setting an initial value for hasBeenRead
-    init(title: String,reasonToRead: String, hasBeenRead:Bool = false) {
+    init(title: String,reasonToRead: String, hasBeenRead: Bool = false) {
         self.hasBeenRead = hasBeenRead
         self.title = title
         self.reasonToRead = reasonToRead
